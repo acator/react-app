@@ -98,10 +98,7 @@ const UsersPage: React.FC = () => {
                 pageNumber={pageNumber} />
             <NavLink className="users-friends"
                 to='/all_users'>All Users</NavLink>
-            {auth &&
-                <NavLink className="users-friends"
-                    to='/friends'>My Friends</NavLink>
-            }
+           
 
             {
                 isFetching ? <Loading /> : <Users  setUser={setUser} >

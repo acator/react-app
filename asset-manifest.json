@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/reapite_app/static/css/main.7be96783.css",
-    "main.js": "/reapite_app/static/js/main.e1bd1339.js",
-    "static/js/787.b701888c.chunk.js": "/reapite_app/static/js/787.b701888c.chunk.js",
-    "static/media/kisspng-real-estate-profile-picture-icon-5b4c113630d846. (2).png": "/reapite_app/static/media/kisspng-real-estate-profile-picture-icon-5b4c113630d846.1237228215317117982001 (2).a110d1c37e64c1882825.png",
-    "static/media/8.gif": "/reapite_app/static/media/8.15a4aadb973c36183e24.gif",
-    "index.html": "/reapite_app/index.html",
-    "static/media/main.less": "/reapite_app/static/media/main.050a6e8f17b6ca3d8257.less",
-    "main.7be96783.css.map": "/reapite_app/static/css/main.7be96783.css.map",
-    "main.e1bd1339.js.map": "/reapite_app/static/js/main.e1bd1339.js.map",
-    "787.b701888c.chunk.js.map": "/reapite_app/static/js/787.b701888c.chunk.js.map"
+    "main.css": "/react-app/static/css/main.7be96783.css",
+    "main.js": "/react-app/static/js/main.d8d06ba1.js",
+    "static/js/787.b701888c.chunk.js": "/react-app/static/js/787.b701888c.chunk.js",
+    "static/media/kisspng-real-estate-profile-picture-icon-5b4c113630d846. (2).png": "/react-app/static/media/kisspng-real-estate-profile-picture-icon-5b4c113630d846.1237228215317117982001 (2).a110d1c37e64c1882825.png",
+    "static/media/8.gif": "/react-app/static/media/8.15a4aadb973c36183e24.gif",
+    "index.html": "/react-app/index.html",
+    "static/media/main.less": "/react-app/static/media/main.050a6e8f17b6ca3d8257.less",
+    "main.7be96783.css.map": "/react-app/static/css/main.7be96783.css.map",
+    "main.d8d06ba1.js.map": "/react-app/static/js/main.d8d06ba1.js.map",
+    "787.b701888c.chunk.js.map": "/react-app/static/js/787.b701888c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7be96783.css",
-    "static/js/main.e1bd1339.js"
+    "static/js/main.d8d06ba1.js"
   ]
 }

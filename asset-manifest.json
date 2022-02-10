@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/react-app/static/css/main.7be96783.css",
-    "main.js": "/react-app/static/js/main.b1b64e1e.js",
+    "main.js": "/react-app/static/js/main.d1c8edab.js",
     "static/js/787.b701888c.chunk.js": "/react-app/static/js/787.b701888c.chunk.js",
     "static/media/kisspng-real-estate-profile-picture-icon-5b4c113630d846. (2).png": "/react-app/static/media/kisspng-real-estate-profile-picture-icon-5b4c113630d846.1237228215317117982001 (2).a110d1c37e64c1882825.png",
     "static/media/8.gif": "/react-app/static/media/8.15a4aadb973c36183e24.gif",
     "index.html": "/react-app/index.html",
     "static/media/main.less": "/react-app/static/media/main.050a6e8f17b6ca3d8257.less",
     "main.7be96783.css.map": "/react-app/static/css/main.7be96783.css.map",
-    "main.b1b64e1e.js.map": "/react-app/static/js/main.b1b64e1e.js.map",
+    "main.d1c8edab.js.map": "/react-app/static/js/main.d1c8edab.js.map",
     "787.b701888c.chunk.js.map": "/react-app/static/js/787.b701888c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7be96783.css",
-    "static/js/main.b1b64e1e.js"
+    "static/js/main.d1c8edab.js"
   ]
 }

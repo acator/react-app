@@ -1,0 +1,52 @@
+.profile_container{
+        display:grid;
+        grid-template-rows: 1fr;
+}
+.profile_info{
+        display:grid;
+        grid-template-columns: 1fr 2fr;
+        border:1px solid white;
+        margin: 10px;
+        padding: 10px;
+}
+.profile_information{
+        display:grid;
+        grid-row: auto;
+}
+.posts{
+        display:grid;
+        grid-template-rows: 1fr;
+}
+.createPosts{
+        display:grid;
+        grid-template-rows: 1fr;
+}
+.creator_posts{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        border: 1px white solid;
+        margin:10px;
+        padding : 10px;
+  
+}
+.creator_posts > textarea{
+        resize: none;
+}
+.photo_profile > img {
+        height: 200px;
+}
+.block_post{
+        display:grid;
+        grid-template-columns: 1fr 5fr;
+        margin:10px;
+        padding:10px;
+        box-shadow: 2px 2px 2px 1px white;
+
+}
+.photo_of_master > img {
+        height:50px;
+}
+.person{
+        display: grid;
+        grid-template-rows: 1fr;
+}

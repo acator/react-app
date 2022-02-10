@@ -1,0 +1,26 @@
+.navbar {
+        display: grid;
+        grid-template-rows: 1fr;
+}
+.navbar > div > a{
+        padding:10px;
+        color:white;
+        text-decoration: none;
+        font-size: 20px;
+
+}
+.navbar > div{
+        padding:10px;
+}
+div>a.active{
+        color:gold;
+}
+.navbar > div:hover, .navbar > div > button:hover{
+        background-color: dimgray;
+}
+.navbar > div > button{
+        border: none;
+        background-color: darkslategray;
+        color:white;
+        font-size: 20px;
+}

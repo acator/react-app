@@ -1,0 +1,8 @@
+.header{
+        padding: 0;
+        background-color:darkslategray;
+}
+.header > h1{
+        color:azure;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

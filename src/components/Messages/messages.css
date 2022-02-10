@@ -1,0 +1,85 @@
+.our_messages{
+        display:grid;
+        grid-template-rows:1fr;
+}
+.container_messages{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+}
+
+.person_of_messages{
+        display:grid;
+        grid-template-columns: 1fr 2fr;
+        padding: 10px;
+}
+.dialogs > div > a{
+        text-decoration: none;
+        color: white;
+}
+.dialogs > div > a.active{
+        color:gold;
+}
+.all_messages{
+        overflow-y:scroll;
+        height: 300px;
+}
+
+::-webkit-scrollbar-track {
+        background-color:#32312e;
+        box-shadow:0px 0px 3px #000 inset;
+}
+
+
+
+
+
+::-webkit-scrollbar{
+width: 11px;
+}
+
+
+.correspondence{
+  
+    grid-gap:1em;
+    margin:10px;
+     border-left: 1px solid white;
+    padding-left: 1em;
+    box-sizing: border-box;
+}
+.photo_person_dialog > img {
+    height:50px;
+}
+
+.person_of_messages:hover{
+    background-color: dimgray;
+}
+.createMessages{
+   display:grid;
+   grid-gap: 1em;
+   grid-template-columns: 3fr 1fr;
+  
+
+}
+.createMessages >textarea{
+    resize: none;
+}
+.createMessages >button {
+    color:white;
+    background-color: dimgrey;
+    border:none;
+    margin:0;
+}
+.message{
+   display:grid;
+   grid-template-columns: 1fr 1fr 8fr;
+   padding: 10px;
+}
+.our_messsges{
+    text-align: left;
+    padding: 10px;
+    background-color: dimgrey;
+    border-radius: 15px;
+}
+.message > img {
+    height:50px;
+}

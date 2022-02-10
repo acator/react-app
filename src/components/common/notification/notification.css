@@ -1,0 +1,9 @@
+.notification{
+        width: 90%;
+        margin:10px auto;
+        padding:10px;
+        text-align:center;
+        background-color: #CCA440;
+        border: 1px solid #826A0A;
+        color:#826A0A;
+}

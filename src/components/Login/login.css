@@ -1,0 +1,28 @@
+.form_login{
+        display:grid;
+        grid-template-rows: 1fr;
+        margin: 10px auto;
+        width:40%;
+        background-color: white;
+
+    
+}
+.form_login > input, button{
+        margin: 10px
+}
+.form_login > input{
+        padding: 10px;
+        width:70%;
+        margin: 20px auto;
+}
+.form_login > button{
+        width:40%;
+        margin:20px auto;
+        padding: 10px;
+        color:white;
+        background-color: dimgrey;
+        border: none;
+}
+.form_login > div{
+        color:black;
+}

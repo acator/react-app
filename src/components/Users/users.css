@@ -1,0 +1,63 @@
+.block_user{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 10px;
+        box-shadow: 2px 2px 2px 1px white;
+        width: 200px;
+}
+.container_users{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+}
+.userPhoto> img{
+        height:200px;
+}
+.block_user > button{
+        border: none;
+        color:white;
+        background-color: darkslategrey;
+        box-shadow: 2px 2px 2px 1px white;
+        width: 60%;
+        margin:10px auto;
+        padding:10px;
+}
+.block_user > a {
+        text-decoration: none;
+        color:white;
+        font-size: 20px;
+}
+.buttonPagination  {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+}
+.buttonPagination{
+        padding: 5px;
+}
+.indicator_button > button {
+        background-color:darkslategrey ;
+        border:none;
+        color:white;
+        font-size: 20px;
+}
+.users-friends{
+        background-color: #2F4F4F;
+        color:white;
+        font-size: 20px;
+        border: none;
+        border-bottom: 2px white solid;
+        margin: 10px;
+        text-decoration: none;
+}
+.searchingUsers{
+        margin: 10px;
+        height: 40px;
+        width: 90%;
+        outline: none;
+        border: solid 1px #2F4F4F;
+        border-radius: 20px;
+        font-size: large;
+        padding: 10px;
+        box-sizing: border-box;
+        box-shadow: 0 0 20px grey;
+}

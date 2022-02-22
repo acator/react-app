@@ -62,7 +62,6 @@ const UsersPage: React.FC = () => {
         
     
 
-        console.log(query)
         dispatch(thunkCreatorGetUsers(count, pagNumberParse, termParse, friendParse.friend))
         
 
@@ -74,7 +73,6 @@ const UsersPage: React.FC = () => {
             pathname: "/all_users",
             search: `?page=${pageNumber}&term=${filter.term || null}&friend=${filter.friend}`
         })
-        console.log(pageNumber)
     }, [filter, pageNumber])
     
    

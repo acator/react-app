@@ -13,7 +13,7 @@ import { Redirect } from "react-router-dom"
 
 let maxLength15 = maxLength(50)
 
-const FormForRedux: React.FC<InjectedFormProps<FormType>> = ({ handleSubmit }) => {
+const FormForRedux: React.FC<InjectedFormProps<FormType>> = ({ handleSubmit, error }) => {
     let captcha = useSelector(isAuth.getCaptcha)
 
     return (
@@ -41,6 +41,8 @@ const FormForRedux: React.FC<InjectedFormProps<FormType>> = ({ handleSubmit }) =
                         type="text" />
                 </div>
             }
+            {error && <div className="error_login">{error}</div>}
+
             <button>Log in</button>
         </form>
     )
@@ -53,6 +55,7 @@ type FormType = {
     
 }
 const Login = () => {
+    let dispatch = useDispatch()
     const submit: (formData: FormType) => void = (formData: FormType) => {
         dispatch(thunkCreatorLogin(formData.login,
             formData.password,
@@ -62,14 +65,14 @@ const Login = () => {
   
     let auth = useSelector(isAuth.getIsAuth)
     let errorNotification = useSelector(error.sendingError)
-    let dispatch = useDispatch()
+ 
     
     if (auth) {
         return <Redirect to={"/profile"} />
     }
     return (
         
-        <div>
+        <div className="form">
             {errorNotification &&
                 <Notification>{errorNotification}</Notification>
             }

@@ -22,7 +22,7 @@ const chatReducer = (state = initialState, action: ActionType): initialChat => {
             return {
                 ...state,
                 messages: [...state.messages, ...action.messages.map(m => ({ ...m, id: v1() }))]
-                    .filter((e, index, array) => index >= array.length - 5)
+                    .filter((e, index, array) => index >= array.length - 100)
             }
         case "CHAT_STATUS":
             return {

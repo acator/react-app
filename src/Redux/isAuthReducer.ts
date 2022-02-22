@@ -1,3 +1,4 @@
+import { FormAction, stopSubmit } from "redux-form"
 import { apiGet } from "../DAL/api"
 import { AuthMeType, ResultCode } from "../DAL/typeRequest"
 import { thunkErrorLoadingAuth, thunkSendingError } from "./errorHandlerReducer"
@@ -88,7 +89,7 @@ export const captchaCreator: ThunkActionType = () => async (dispatch) => {
     dispatch(actionsAuth.captcha(data.data.url))
 
 }
-export const thunkCreatorLogin: ThunkActionType = (email: string, password: string, rememberMe: Boolean, captcha?: string) => {
+export const thunkCreatorLogin: ThunkActionForm = (email: string, password: string, rememberMe: Boolean, captcha?: string) => {
     return async (dispatch) => {
         try{
         let data = await apiGet.login(email, password, rememberMe = true, captcha! )
@@ -96,8 +97,11 @@ export const thunkCreatorLogin: ThunkActionType = (email: string, password: stri
             dispatch(thunkCreatorAuthMe())
         } else if (data.data.resultCode === ResultCode.Captcha) {
             dispatch(captchaCreator())
+        } else if (data.data.resultCode === 1){
+            dispatch(stopSubmit("login", {_error: `${data.data.messages}`}))
         }
     }catch(error){
+        
         dispatch(thunkSendingError())
 
     }
@@ -113,6 +117,7 @@ export const thunkCreatorLogOut: ThunkActionType = () => {
     }
 }
 export type ThunkActionType = ThunkType<ActionType>
+export type ThunkActionForm = ThunkType< FormAction>
 export type ThunkActionTypeUn = ThunkType<ActionType, Promise<AuthMeType | undefined>>
 
  

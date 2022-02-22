@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { useSelector } from 'react-redux';
+import { users } from '../../Redux/selectors/users';
 interface Props{
     totalCount: number | null
     count: number
@@ -8,7 +10,7 @@ const Pagination = ({ totalCount, count, setUser}:Props) => {
 
     let page: Array<number> = [];
     let [number, setNumber] = useState(1)
-
+    const pageNumber = useSelector(users.getPageNumber)
     if (totalCount !== null){
     let pagesNumber: number = Math.ceil(totalCount / count);
     for (let i = 1; i <= pagesNumber; i++) {
@@ -25,7 +27,7 @@ const Pagination = ({ totalCount, count, setUser}:Props) => {
         }
             {page.filter((e: number) => e >= leftEdge && e <= rightEdge)
                 .map((p: any) => {
-                    return <span className="buttonPagination"
+                    return <span className={pageNumber === p ? "totalPage" : "page"}
                         onClick={() => { setUser(p) }}
                         key={p.id} >{p}</span>
                 })}

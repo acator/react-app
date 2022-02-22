@@ -2,19 +2,17 @@
         display:grid;
         grid-template-rows: 1fr;
         margin: 10px auto;
-        width:40%;
+        width:100%;
+        padding: 10px;
         background-color: white;
 
-    
 }
-.form_login > input, button{
-        margin: 10px
+
+.error_login{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color:red;
 }
-.form_login > input{
-        padding: 10px;
-        width:70%;
-        margin: 20px auto;
-}
+
 .form_login > button{
         width:40%;
         margin:20px auto;
@@ -25,4 +23,8 @@
 }
 .form_login > div{
         color:black;
+        margin:  auto;
+}
+.form{
+        margin: 0 auto;
 }
